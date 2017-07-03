@@ -21,32 +21,19 @@
         
         <!--Current Schedule Panel-->
         <div class="panel panel-primary">
-            <div class="panel-heading">Panel Heading</div>
+            <div class="panel-heading">Current Train Schedule</div>
             <div class="panel-body">
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -54,21 +41,26 @@
 
         <!--Add Train Form-->
         <div class="panel panel-primary">
-            <div class="panel-heading">Panel Heading</div>
+            <div class="panel-heading">Add Train</div>
             <div class="panel-body">
                 <form>
                     <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
+                    <div class="form-group">
+                        <label for="train-time">First Train Time (HH:mm – military time)</label>
+                        <input type="text" class="form-control" id="train-time">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
